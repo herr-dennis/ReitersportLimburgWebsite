@@ -1,0 +1,87 @@
+
+$defaultColor: rgb(145, 10, 10);
+/* Basis: Seitenhöhe & Box-Modell*/
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; }
+
+/* Body wird zum „Träger“ für unsere Schichten */
+body {
+    position: relative;   /* damit ::before sich daran orientiert */
+    min-height: 100vh;   /* Seite mind. so hoch wie der Viewport */
+}
+
+/* Hintergrund-Layer liegt HINTER allem Content */
+body::before {
+    content: "";
+    position: fixed;      /* bleibt beim Scrollen stehen (Desktop) */
+    inset: 0;             /* top/right/bottom/left: 0 */
+    background: url('../images/horse.jpg') no-repeat center / cover;
+    z-index: -1;          /* hinter dem Seiteninhalt */
+}
+
+/* Mobile-Fix: dort eher mitscrollen lassen, um Flackern zu vermeiden */
+@media (max-width: 768px) {
+    body::before { position: absolute; } /* scrollt mit dem Inhalt */
+}
+main {
+    width: min(1200px, 92%);   /* max 1200px oder 92% Breite */
+    margin: 24px auto;         /* zentrieren + Abstand */
+    padding: 16px;
+    min-height: 100vh;
+    /* display: grid;
+   grid-template-rows: auto 1fr auto;  Header | Main (füllt) | Footer */
+}
+
+.nav {
+    &__ul {
+        background-color: $defaultColor;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 8px;
+    }
+
+    &__li {
+        color: #fff;
+        padding: 10px 20px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: darken($defaultColor, 10%);
+        }
+    }
+}
+
+/* Standard-Content-Container („Karte“) */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(255,255,255,0.5);
+    color: #163e42;
+    border-radius: 12px;
+    padding: 18px;
+   margin-block: 16px;   /*  Abstand oben/unten zwischen Containern */
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+
+}
+
+/* Varianten (z. B. dunkler, akzentuiert) */
+.container--dark {
+    background: rgba(20, 20, 22, 0.7);
+    color: #fff;
+}
+
+.container--accent {
+    border: 2px solid #16464b;
+}
+header, footer {
+    color: #fff;
+    padding: 16px;
+    /* optional leichte Tönung für Lesbarkeit: */
+    background: rgba(0,0,0,0.25);
+    backdrop-filter: blur(2px);
+}
