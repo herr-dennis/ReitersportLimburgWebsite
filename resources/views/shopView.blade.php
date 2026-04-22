@@ -1,0 +1,46 @@
+@extends("layouts.defaultLayout")
+
+
+@section("mainContent")
+
+    <div id="page"  data-page="shop" ></div>
+
+    <div class="container">
+
+
+        <p>{{ __('messages.shop.text1') }}</p>
+        <p>{{ __('messages.shop.text2') }}</p>
+        <p>{{ __('messages.shop.text3') }}</p>
+        <p>{{ __('messages.shop.text4') }}</p>
+        <p>{{ __('messages.shop.text5') }}</p>
+
+        <a href="tel:{{ __('messages.shop.contact_phone') }}">
+            {{ __('messages.shop.contact_label') }}: {{ __('messages.shop.contact_phone') }}
+        </a>
+
+        <p>   {{ __('messages.shop.address_label') }}</p>
+
+
+        <p>   {{ __('messages.shop.address') }}</p>
+
+
+        <h1> {{ __('messages.shop.opening_label') }}</h1>
+        <ul>
+            @foreach(__('messages.shop.opening_hours') as $time)
+                <li>{{ $time }}</li>
+            @endforeach
+        </ul>
+
+    </div>
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2512.6531008233733!2d5.9761837!3d50.967117699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0bbc3c9db6993%3A0x82d0ca9c1369cd1!2sRuitersport%20Limburg!5e0!3m2!1sde!2sde!4v1776124083198!5m2!1sde!2sde"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+
+@endsection
+

@@ -1,0 +1,68 @@
+.favCategory {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;             // Abstand zwischen Items
+    text-align: center;    // Text unter Bild zentrieren
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;        // keine Link-Unterstreichung
+        color: #333;                  // Textfarbe
+        font-weight: 600;
+
+        transition: transform .2s ease, box-shadow .2s ease;
+
+        &:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+    }
+
+    &__img {
+        width: 120px;           // runde Größe
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;      // Bild schön zuschneiden
+        border: 2px solid $defaultColor;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        margin-bottom: 8px;
+    }
+
+    .h4_1 {
+        background: rgba(0,0,0,0.5);
+        color: #fff;
+        padding: 4px 8px;
+        border-radius: 6px;
+
+    }
+
+    .h4_2::first-letter{
+            text-transform: capitalize;
+    }
+
+    .h4_2{
+        color: #fff;  // weiße Schrift
+        text-shadow: 0 2px 4px rgba(0,0,0,.6); // dunkler Schatten für Kontrast
+
+    }
+
+
+    .h4_3{
+        color: #fff;
+        font-weight: 600;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+        margin-top: 8px;
+    }
+    .h4_3:hover{
+        color: #6b46c1; // Branding
+        text-shadow: none; // beim Hover cleaner
+    }
+}
+
+
+
+

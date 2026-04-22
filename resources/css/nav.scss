@@ -1,0 +1,221 @@
+$defaultColor: rgb(111, 66, 193);
+$breakpoint: 768px;
+$drawer-width: 280px;
+$backdrop-color: rgba(43, 40, 40, 0.45);
+
+/* Desktop-Nav */
+.nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+
+    &__ul {
+        list-style: none;
+        display: flex;
+        gap: 8px;
+    }
+
+    &__li {
+        font-size: 1.3rem;        // etwas größer (≈ 18px)
+        font-weight: 1500;         // halbfett für bessere Lesbarkeit
+        letter-spacing: 0.5px;    // mehr Luft zwischen Buchstaben
+        line-height: 1.6;         // angenehmer Zeilenabstand
+        padding: 12px 20px;       // mehr Klickfläche
+        cursor: pointer;
+        color: #111;              // Textfarbe (auf hellem BG)
+        border-radius: 6px;
+        transition: background-color .2s ease, color .2s ease;
+        &:hover { background-color:  lighten($defaultColor, 10%); }
+        &.active { background-color: darken($defaultColor, 10%);color: white; border-radius: 6px; }
+    }
+
+    &__burger{
+        display: none;
+    }
+}
+
+/* ========== Mobile: Hamburger + Drawer ========== */
+/* Gemeinsamer Layer über der Seite */
+.nav-layer {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;   // Standard: nichts klickbar
+    z-index: 9990;          // EIN gemeinsamer Kontext
+}
+
+/* Backdrop unter Drawer */
+.nav-layer__backdrop {
+    position: fixed;
+    inset: 0;
+    background: $backdrop-color;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s ease, visibility .2s ease;
+    z-index: 1;
+    pointer-events: auto;   // klickbar, wenn sichtbar
+}
+
+/* Drawer über Backdrop */
+.nav-layer__drawer {
+    position: fixed;
+    top: 0; right: 0;
+    width: $drawer-width; max-width: 85vw;
+    height: 100dvh;
+    background: rgba(255, 255, 255);
+    box-shadow: -12px 0 24px rgb(23, 22, 22);
+    transform: translateX(100%);
+    transition: transform .3s ease;
+    z-index: 2;
+    padding: 20px;
+    pointer-events: auto;
+}
+
+/* Liste im Drawer */
+.nav-layer__ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;   // vertikal stapeln
+    align-items: flex-start;  // nach links ausrichten
+    gap: 12px;                // moderner Abstand zwischen den Punkten
+}
+
+/* Einzelne Menü-Punkte */
+.nav-layer__ul li {
+    cursor: pointer;
+    color: $defaultColor;
+    font-size: 1.25rem;       // größer als Standard (≈ 20px)
+    font-weight: 500;         // etwas kräftiger
+    letter-spacing: 0.5px;    // leicht luftiger
+    padding: 10px 0;          // mehr Klickfläche
+    width: 100%;              // ganze Breite für besseren Touch-Hit
+    transition: color .2s ease, transform .2s ease;
+}
+
+/* Hover-/Tap-Effekt
+.nav-layer .nav-layer__ul li:hover {
+    color: lighten($defaultColor, 15%);
+    transform: translateX(4px);
+    border-radius: 5px;
+    padding: 2px;
+}*/
+
+.nav-layer .nav-layer__li.active {
+    color: #090909;           // oder deine Akzentfarbe
+    font-weight: 600;
+    transform: translateX(4px);
+    background: rgba(255,255,255,.08);
+    border-radius: 8px;
+}
+
+
+.nav_btn{
+    color: $defaultColor;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1.2rem;       // größer als Standard (≈ 20px)
+    font-weight: 500;         // etwas kräftiger
+    letter-spacing: 0.5px;    // leicht luftiger
+    padding: 10px 0;
+    width: 100%;              // ganze Breite für besseren Touch-Hit
+    transition: color .2s ease, transform .2s ease;
+}
+
+/* Offen-Zustand – setze Klasse auf <body> ODER #nav-layer */
+.is-open .nav-layer__drawer { transform: translateX(0); }
+.is-open .nav-layer__backdrop { opacity: 1; visibility: visible; }
+
+// Mobile
+@media (max-width: $breakpoint) {
+    .nav {
+        &__ul { display: none; }    // Desktop-Liste ausblenden
+        &__burger { display: block; } // Burger zeigen
+    }
+}
+
+// Desktop
+@media (min-width: $breakpoint) {
+    .nav-layer { display: none; }
+}
+
+.no-scroll { overflow: hidden; height: 100dvh; }
+
+
+$burger-size: 42px;
+$burger-line-width: 24px;
+$burger-line-height: 2px;
+$burger-color: $defaultColor;
+
+.nav__burger {
+    width: $burger-size;
+    height: $burger-size;
+    border: none;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+
+    // drei Linien
+    &::before,
+    &::after,
+    span {
+        content: "";
+        display: block;
+        position: absolute;
+        left: calc(($burger-size - $burger-line-width) / 2); // zentrieren
+        width: $burger-line-width;
+        height: $burger-line-height;
+        background: $burger-color;
+        border-radius: 2px;
+        transition: transform .3s ease, opacity .3s ease;
+    }
+
+    span { top: 50%; transform: translateY(-50%); }
+    &::before { top: 30%; }
+    &::after  { top: 70%; }
+
+}
+
+.nav-layer__img{
+    height: 133px;
+    width: auto;
+    justify-self: end;
+}
+.nav-layer__social {
+    margin-top: auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+/* Instgramm / Facebock  */
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    color: #fff;               // Icon-Farbe
+    text-decoration: none;
+    transition: background .3s ease, transform .2s ease;
+
+    &:hover {
+        background: rgba(255,255,255,0.25);
+        transform: scale(1.1);
+    }
+
+    svg {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+// Farben individuell für Branding
+.social-link.instagram { background: #E1306C; }
+.social-link.facebook  { background: #1877F2; }
