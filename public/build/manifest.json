@@ -1,0 +1,34 @@
+{
+  "resources/css/app.scss": {
+    "file": "assets/app-Iw3njqKv.css",
+    "src": "resources/css/app.scss",
+    "isEntry": true,
+    "names": [
+      "app.css"
+    ]
+  },
+  "resources/images/default.jpg": {
+    "file": "assets/default-Dtl0xteg.jpg",
+    "src": "resources/images/default.jpg"
+  },
+  "resources/images/horse.jpg": {
+    "file": "assets/horse-DcN_sYwU.jpg",
+    "src": "resources/images/horse.jpg"
+  },
+  "resources/images/logo_lang.png": {
+    "file": "assets/logo_lang-rbqS7E1q.png",
+    "src": "resources/images/logo_lang.png"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-CZxuUZ2S.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "css": [
+      "assets/app-v8yvEnHB.css"
+    ],
+    "assets": [
+      "assets/logo_lang-rbqS7E1q.png"
+    ]
+  }
+}
