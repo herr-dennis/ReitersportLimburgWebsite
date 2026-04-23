@@ -11,7 +11,7 @@
         <div class="banner__content">
             <h2>{{ __("messages.welcome") }}</h2>
             <p>{{__("messages.welcomeUnderline") }}</p>
-            <img src="{{asset("/images_general/horse.webp")}}" alt="logo">
+            <img src="{{asset("/images_general/title_front.png")}}" alt="logo">
         </div>
     </div>
 

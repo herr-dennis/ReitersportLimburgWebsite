@@ -148,13 +148,12 @@ main {
     color: #0f2f32;
 }
 
-/* Dark Mode Links */
-.container--dark a {
-    color: #7fd1d8;
-}
 
-.container--dark a:hover {
-    color: #a6e6ec;
+.phone_icon{
+    color:$defaultColor;
+    width: 24px;
+    height: 24px;
+    margin: 0 4px;
 }
 
 /* =========================
