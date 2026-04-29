@@ -27,6 +27,9 @@
                 <li>{{ $time }}</li>
             @endforeach
         </ul>
+
+        <p  class="p__email" >Email: <a href="mailto:info@deonderstemolen.nl">info@deonderstemolen.nl</a></p>
+
     </div>
 
     <div class="map-container">

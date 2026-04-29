@@ -5,35 +5,22 @@ const categories_feed = [
             nl: "Paardenvoer"
         },
         description: {
-            de: "Hochwertiges Pferdefutter für jede Bedarfssituation – von Müsli über Pellets bis hin zu Spezialfutter für Leistung, Gesundheit und Regeneration.",
-            nl: "Hoogwaardig paardenvoer voor elke behoefte – van muesli tot pellets en speciaal voer voor prestaties, gezondheid en herstel."
+            de: `Dein Pferd ist mehr als nur ein Tier – es ist dein Partner.
+
+Egal ob Training oder entspannter Ausritt: Jedes Pferd braucht die richtige Energie. Unser Sortiment bietet eine ausgewogene Mischung aus Nährstoffen, Vitaminen und Mineralien.
+
+Wir beraten dich gerne individuell bei der Auswahl.`,
+            nl: `Jouw paard is meer dan alleen maar een dier; het is je maatje.
+
+Of je nu traint of ontspant: elk paard heeft behoefte aan de juiste energiebronnen.
+
+Ons assortiment biedt een gebalanceerde mix van voedingsstoffen, vitaminen en mineralen.`
         },
-        brands: "Vitalbix, Cavalor, Pavo, Havens",
-        image: "images_general/feed_storage_1.webp"
-    },
-    {
-        title: {
-            de: "Taubenfutter",
-            nl: "Duivenvoer"
+        bullets: {
+            de: [],
+            nl: []
         },
-        description: {
-            de: "Ausgewählte Futtermischungen für Zucht-, Reise- und Sporttauben – optimal abgestimmt für Energie und Kondition.",
-            nl: "Geselecteerde voermengelingen voor kweek-, reis- en sportduiven – perfect afgestemd voor energie en conditie."
-        },
-        brands: "Beyers, Versele-Laga",
-        image: "images_general/feed_storage_2.webp"
-    },
-    {
-        title: {
-            de: "Vogelfutter",
-            nl: "Vogelvoer"
-        },
-        description: {
-            de: "Vielfältiges Futter für Zier- und Wildvögel – nährstoffreich und artgerecht für jede Jahreszeit.",
-            nl: "Gevarieerd voer voor sier- en wilde vogels – voedzaam en afgestemd op elk seizoen."
-        },
-        brands: "Versele-Laga, Witte Molen",
-        image: "images_general/feed_storage_3.webp"
+        image: "images_general/feed_shop.webp"
     },
     {
         title: {
@@ -41,35 +28,187 @@ const categories_feed = [
             nl: "Hondenvoer"
         },
         description: {
-            de: "Ausgewählte Futtersorten für Hunde – von Trockenfutter bis Snacks, für eine ausgewogene Ernährung.",
-            nl: "Geselecteerde voedersoorten voor honden – van droogvoer tot snacks voor een uitgebalanceerde voeding."
+            de: `Dein Hund ist ein Familienmitglied. Deshalb bieten wir hochwertiges Futter für alle Lebensphasen.
+
+Von Welpen bis Senioren – bei uns findest du passende Ernährung für jede Rasse und jedes Bedürfnis.`,
+            nl: `Jouw hond is een volwaardig gezinslid.
+
+Wij bieden voer voor elke levensfase – van puppy tot senior – afgestemd op ras en behoefte.`
         },
-        brands: "Pedigree, Royal Canin",
-        image: "images_general/feed_storage_5.webp"
+        bullets: {
+            de: [
+                "Getreidefreies Futter",
+                "Hypoallergene Varianten",
+                "Für empfindliche Mägen geeignet"
+            ],
+            nl: [
+                "Graanvrij voer",
+                "Hypoallergene brokken",
+                "Voor gevoelige magen"
+            ]
+        },
+        image: "images_general/f"
     },
     {
         title: {
-            de: "Kleintierfutter & weitere Tierarten",
-            nl: "Knaagdierenvoer & overige diersoorten"
+            de: "Katzenfutter",
+            nl: "Kattenvoer"
         },
         description: {
-            de: "Futter für verschiedene Kleintiere wie Hamster, Kaninchen und Meerschweinchen sowie weitere Tierarten – abwechslungsreich, ausgewogen und artgerecht.",
-            nl: "Voer voor verschillende kleine dieren zoals hamsters, konijnen en cavia’s, evenals andere diersoorten – gevarieerd, uitgebalanceerd en diervriendelijk."
+            de: `Gib deiner Katze das Beste für ein gesundes und glückliches Leben.
+
+Unser Katzenfutter enthält wichtige Nährstoffe für glänzendes Fell, starke Muskeln und ein gutes Immunsystem.`,
+            nl: `Ontdek het beste voor jouw kat.
+
+Ons voer bevat essentiële voedingsstoffen voor een gezonde vacht, sterke spieren en goede weerstand.`
         },
-        brands: "Versele-Laga, Vitakraft",
+        bullets: {
+            de: [
+                "Trocken- und Nassfutter",
+                "Für Kitten bis Senioren",
+                "Unterstützt Gesundheit und Vitalität"
+            ],
+            nl: [
+                "Brokjes en natvoer",
+                "Voor kitten tot senior",
+                "Ondersteunt gezondheid"
+            ]
+        },
+        image: "images_general/feed_shop_1.webp"
+    },
+    {
+        title: {
+            de: "Taubenfutter",
+            nl: "Duivenvoer"
+        },
+        description: {
+            de: `Gutes Futter ist entscheidend für Gesundheit und Leistung deiner Tauben.
+
+Unsere Mischungen enthalten wichtige Nährstoffe für optimale Versorgung.`,
+            nl: `Goede voeding is essentieel voor je duiven.
+
+Onze mengelingen bevatten alle belangrijke voedingsstoffen.`
+        },
+        bullets: {
+            de: [
+                "Basismischungen",
+                "Sport- und Leistungsfutter",
+                "Zuchtfutter",
+                "Ergänzungen wie Grit und Mineralien"
+            ],
+            nl: [
+                "Basis mengelingen",
+                "Sport- en prestatievoer",
+                "Kweekvoer",
+                "Grit en mineralen"
+            ]
+        },
         image: "images_general/feed_shop_2.webp"
     },
     {
         title: {
-            de: "Frische Möhren",
-            nl: "Verse wortelen"
+            de: "Vogelfutter",
+            nl: "Vogelvoer"
         },
         description: {
-            de: "Frische Möhren als gesunder Snack für Pferde – reich an Vitaminen und ideal zur täglichen Fütterung.",
-            nl: "Verse wortelen als gezonde snack voor paarden – rijk aan vitamines en ideaal voor dagelijks gebruik."
+            de: `Breites Sortiment für Ziervögel und Wildvögel.
+
+Geeignet für Kanarien, Papageien und Garten-Vögel.`,
+            nl: `Breed aanbod voor verschillende vogelsoorten.
+
+Geschikt voor huis- en tuinvogels.`
         },
-        brands: "Regional",
+        bullets: {
+            de: [
+                "Samen",
+                "Erdnüsse",
+                "Fettbälle",
+                "Mehlwürmer"
+            ],
+            nl: [
+                "Zaden",
+                "Pinda’s",
+                "Vetbollen",
+                "Meelwormen"
+            ]
+        },
+        image: "images_general/feed_shop_2.webp"
+    },
+    {
+        title: {
+            de: "Nagerfutter",
+            nl: "Knaagdiervoer"
+        },
+        description: {
+            de: `Gesunde Ernährung ist entscheidend für Nager.
+
+Sie unterstützt Verdauung und sorgt für natürlichen Zahnabrieb.`,
+            nl: `Gezonde voeding is belangrijk voor knaagdieren.
+
+Het ondersteunt de spijsvertering en slijtage van tanden.`
+        },
+        bullets: {
+            de: [
+                "Futter (Pellets & Mischungen)",
+                "Heu",
+                "Snacks",
+                "Einstreu"
+            ],
+            nl: [
+                "Brokjes of mixvoer",
+                "Hooi",
+                "Snacks",
+                "Bodembedekking"
+            ]
+        },
+        image: "images_general/food_6.webp"
+    },
+    {
+        title: {
+            de: "Nutztierfutter",
+            nl: "Erfdieren"
+        },
+        description: {
+            de: `Futter für Nutz- und Hoftiere wie Hühner, Schafe oder Schweine.
+
+Abgestimmt auf die Bedürfnisse jeder Tierart und Lebensphase.`,
+            nl: `Voer voor kippen, schapen en andere erfdieren.
+
+Aangepast aan dier en levensfase.`
+        },
+        bullets: {
+            de: [],
+            nl: []
+        },
+        image: "images_general/feed_shop.webp"
+    },
+    {
+        title: {
+            de: "Futterkarotten",
+            nl: "Voerwortelen"
+        },
+        description: {
+            de: `Eine gesunde Ergänzung für viele Tierarten.
+
+Unsere Futterkarotten sind frisch, nährstoffreich und gut verdaulich.`,
+            nl: `Gezonde aanvulling op het rantsoen.
+
+Vers geoogst en rijk aan voedingsstoffen.`
+        },
+        bullets: {
+            de: [
+                "Frisch geerntet",
+                "Hoher Nährwert",
+                "Für viele Tierarten geeignet"
+            ],
+            nl: [
+                "Vers geoogst",
+                "Hoge voedingswaarde",
+                "Voor meerdere dieren"
+            ]
+        },
         image: "images_general/feed_shop.webp"
     }
 ];
+
 export default categories_feed;
