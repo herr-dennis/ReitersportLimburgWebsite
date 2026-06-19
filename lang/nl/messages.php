@@ -4,8 +4,8 @@ return [
     'welcome' => 'Welkom bij onze speciaalzaak voor ruitersport en dierbenodigdheden',
 
     'routes' => [
-        'impressum' => 'colofon',
-        'dataprotection' => 'privacybeleid',
+        'impressum' => 'legal notice',
+        'dataprotection' => 'Privacy policy',
         'animalfeed' => 'diervoeder',
         'horses' => 'paarden',
         'rider' => 'ruiters',

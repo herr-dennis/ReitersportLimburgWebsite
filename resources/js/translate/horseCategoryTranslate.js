@@ -155,7 +155,32 @@ Ze zorgen voor comfort, bescherming en stabiliteit tijdens het rijden en zijn ve
              nl: []
          },
          image: "images_general/horse_eq_4.webp"
+     },
+
+     {
+         title: {
+             de: "Stallzubehör",
+             nl: "Stal"
+         },
+         description: {
+             de: `Ein gut eingerichteter Pferdestall bildet die Grundlage für Gesundheit, Wohlbefinden und Leistung Ihres Pferdes. Ob Sie privater Pferdehalter sind, eine Pensionsstall betreiben oder eine professionelle Reitanlage führen – hochwertiges Stallzubehör macht den Unterschied.`,
+             nl: `Een goed ingerichte paardenstal vormt de basis voor de gezondheid, het welzijn en de prestaties van uw paard. Of u nu een particuliere paardenhouder bent, een pensionstal runt of een professionele manege beheert, kwalitatieve paardenstal benodigdheden maken het verschil.`
+         },
+         bullets: {
+             de: [
+                 "Stallinrichtung: Futter- und Tränkebehälter, Sattel- und Zaumzeughalter, Anbindehaken und Ketten, Heunetze und Slowfeeder",
+                 "Stallhygiene: Mistgabeln und Mistschaufeln, Schaufeln und Besen, Stroh, Flachs und Holzspäne, Stallreinigungsmittel"
+             ],
+             nl: [
+                 "Stalinrichting: Voer- en drinkbakken, Zadel- en hoofdstelhouders, Vastzethaken en kettingen, Hooinetten en slowfeeders",
+                 "Stalhygiëne: Mestvorken en mestboys, Schoppen en bezems, Stro, vlas en houtvezel, Reinigingsproducten voor stallen"
+             ]
+         },
+         image: "images_general/stal.webp"
      }
+
+
+
  ];
 
 export  default categories;

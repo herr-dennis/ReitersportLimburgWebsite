@@ -34,7 +34,7 @@ Waarom kiezen voor onze jodhpurs en chaps?`
                 "Ideaal te combineren met jodhpurs"
             ]
         },
-        image: "images_general/horse_eq_2.webp"
+        image: "images_general/horse_eq_6.webp"
     },
     {
         title: {
@@ -117,7 +117,7 @@ Goede rijhandschoenen zijn gemaakt van sterke materialen zoals synthetisch leer,
             de: [],
             nl: []
         },
-        image: "images_general/horse_eq_2.webp"
+        image: "images_general/horse_eq_1.webp"
     },
     {
         title: {
@@ -144,7 +144,7 @@ Rij met gevoel. Rij met controle.`
             de: [],
             nl: []
         },
-        image: "images_general/horse_eq_2.webp"
+        image: "images_general/horse_eq_3.webp"
     }
 ];
 

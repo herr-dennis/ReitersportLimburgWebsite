@@ -47,7 +47,7 @@ Wij bieden voer voor elke levensfase – van puppy tot senior – afgestemd op r
                 "Voor gevoelige magen"
             ]
         },
-        image: "images_general/f"
+        image: "images_general/dog.jpg"
     },
     {
         title: {
@@ -74,7 +74,7 @@ Ons voer bevat essentiële voedingsstoffen voor een gezonde vacht, sterke spiere
                 "Ondersteunt gezondheid"
             ]
         },
-        image: "images_general/feed_shop_1.webp"
+        image: "images_general/cat.jpg"
     },
     {
         title: {
@@ -103,7 +103,7 @@ Onze mengelingen bevatten alle belangrijke voedingsstoffen.`
                 "Grit en mineralen"
             ]
         },
-        image: "images_general/feed_shop_2.webp"
+        image: "images_general/tauben1.jpg"
     },
     {
         title: {
@@ -132,7 +132,7 @@ Geschikt voor huis- en tuinvogels.`
                 "Meelwormen"
             ]
         },
-        image: "images_general/feed_shop_2.webp"
+        image: "images_general/vogel.jpg"
     },
     {
         title: {
@@ -161,7 +161,7 @@ Het ondersteunt de spijsvertering en slijtage van tanden.`
                 "Bodembedekking"
             ]
         },
-        image: "images_general/food_6.webp"
+        image: "images_general/hase.jpg"
     },
     {
         title: {
@@ -180,7 +180,7 @@ Aangepast aan dier en levensfase.`
             de: [],
             nl: []
         },
-        image: "images_general/feed_shop.webp"
+        image: "images_general/nutztiere.jpg"
     },
     {
         title: {
@@ -207,7 +207,7 @@ Vers geoogst en rijk aan voedingsstoffen.`
                 "Voor meerdere dieren"
             ]
         },
-        image: "images_general/feed_shop.webp"
+        image: "images_general/wortel.jpg"
     }
 ];
 

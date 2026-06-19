@@ -9,7 +9,7 @@ const gardenCategories = [
             nl: "Betrouwbare afrasteringen voor veilige omheining van paarden en weides – duurzaam, stabiel en eenvoudig te installeren."
         },
         brands: "Lerns wegen",
-        image: "images_general/besen.webp"
+        image: "images_general/zaun.jpg"
     },
     {
         title: {
@@ -21,7 +21,7 @@ const gardenCategories = [
             nl: "Stevige mestvorken en praktisch stalgereedschap voor dagelijks gebruik – efficiënt en ergonomisch."
         },
         brands: "Lerns wegen",
-        image: "images_general/besen.webp"
+        image: "images_general/img.png"
     },
     {
         title: {
@@ -45,7 +45,7 @@ const gardenCategories = [
             nl: "Milieuvriendelijke oplossingen voor het bestrijden van parasieten – veilig voor dier en natuur."
         },
         brands: "Lerns wegen",
-        image: "images_general/besen.webp"
+        image: "images_general/img.png"
     },
     {
         title: {
@@ -57,7 +57,7 @@ const gardenCategories = [
             nl: "Alles voor het onderhoud van je weide – voor gezonde bodems en optimale omstandigheden voor je dieren."
         },
         brands: "Lerns wegen",
-        image: "images_general/besen.webp"
+        image: "images_general/img.png"
     },
     {
         title: {
@@ -69,7 +69,7 @@ const gardenCategories = [
             nl: "Praktische hulpmiddelen voor tuin en erf – van transport tot onderhoud alles in één."
         },
         brands: "Lerns wegen",
-        image: "images_general/besen.webp"
+        image: "images_general/img.png"
     }
 ];
 

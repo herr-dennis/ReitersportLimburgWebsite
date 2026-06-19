@@ -165,9 +165,10 @@ function directionTo(path){
             <li  data-nav="horse"  @click="directionTo(currentRoutes[2])" class="nav__li">{{ currentRoutes[2] }}</li>
             <li  data-nav="rider" @click="directionTo(currentRoutes[3])" class="nav__li">{{ currentRoutes[3] }}</li>
             <li  data-nav="feed" @click="directionTo(currentRoutes[4])" class="nav__li">{{ currentRoutes[4] }}</li>
+            <li data-nav="garden" @click="directionTo(currentRoutes[8])" class="nav__li">  {{currentRoutes[8]}}</li>
             <li  data-nav="shop" @click="directionTo(currentRoutes[7])" class="nav__li" >{{ currentRoutes[7] }}</li>
             <li data-nav="contact" @click="directionTo(currentRoutes[1])" class="nav__li">  {{currentRoutes[1]}}</li>
-            <li data-nav="garden" @click="directionTo(currentRoutes[8])" class="nav__li">  {{currentRoutes[8]}}</li>
+
         </ul>
         <div class="nav__lang">
             <button @click="changeLang()">
@@ -197,9 +198,10 @@ function directionTo(path){
                     <li  data-nav="horse" @click="directionTo(currentRoutes[2])" class="nav__li">{{ currentRoutes[2] }}</li>
                     <li data-nav="rider"  @click="directionTo(currentRoutes[3])" class="nav__li">{{ currentRoutes[3] }}</li>
                     <li  data-nav="feed" @click="directionTo(currentRoutes[4])" class="nav__li">{{ currentRoutes[4] }}</li>
+                    <li data-nav="garden" @click="directionTo(currentRoutes[8])" class="nav__li">  {{currentRoutes[8]}}</li>
                     <li  data-nav="shop"   @click="directionTo(currentRoutes[7])" class="nav__li" >{{ currentRoutes[7] }}</li>
                     <li data-nav="contact" @click="directionTo(currentRoutes[1])" class="nav__li">  {{currentRoutes[1]}}</li>
-                    <li data-nav="garden" @click="directionTo(currentRoutes[8])" class="nav__li">  {{currentRoutes[8]}}</li>
+
                 </ul>
 
                 <button class="nav_btn" id="closeBtn" aria-label="Menü schließen">&#10005;</button>
