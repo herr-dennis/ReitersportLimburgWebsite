@@ -16,7 +16,17 @@
     </div>
 
     <div class="vue-mount" data-component="NewsFeed" data-endpoint="{{route("api.news")}}" ></div>
-
+    <div style="
+    background-color: #b91c1c;
+    color: #ffffff;
+    padding: 12px 20px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 6px;
+    margin-bottom: 20px;
+">
+        Deze website is momenteel nog in ontwikkeling.
+    </div>
     <div class="container">
 
         <h2>{{__("messages.welcomeTextH2")}}</h2>

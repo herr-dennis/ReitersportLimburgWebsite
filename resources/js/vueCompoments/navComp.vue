@@ -46,15 +46,20 @@ onMounted(() => {
 
 
     function highlightedNav() {
+        const page = document.querySelector('#page');
+
+        if (!page || !page.dataset.page) {
+            return;
+        }
+
+        const currentPage = page.dataset.page;
         const navItems = document.querySelectorAll('.nav__li');
-        const currentPage = document.querySelector('#page').dataset.page;
 
         navItems.forEach(item => {
-            item.classList.remove('active');
-
-            if (item.dataset.nav === currentPage) {
-                item.classList.add('active');
-            }
+            item.classList.toggle(
+                'active',
+                item.dataset.nav === currentPage
+            );
         });
     }
 
@@ -116,9 +121,6 @@ onMounted(() => {
     backdrop?.addEventListener('click', closeNav);
     closeBtn?.addEventListener('click', closeNav);
 
-    navItems?.forEach(item => {
-        console.log(item.data);
-    })
    highlightedNav();
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && layer.classList.contains('is-open')) closeNav();
@@ -205,7 +207,7 @@ function directionTo(path){
                 </ul>
 
                 <button class="nav_btn" id="closeBtn" aria-label="Menü schließen">&#10005;</button>
-                <img class="nav-layer__img" :src="logo" alt="Logo" />
+                <img @click="directionTo()" class="nav-layer__img" :src="logo" alt="Logo" />
 
                 <div class="nav-layer__social">
                     <a href="https://www.instagram.com" target="_blank" aria-label="Instagram" class="social-link instagram">

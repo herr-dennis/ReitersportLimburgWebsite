@@ -44,7 +44,7 @@ return [
 
         'contact_label' => 'Telefoon',
         'contact_phone' => '+31 45 564 0012',
-
+        'contact_text' => 'Aarzel niet en neem contact met ons op!',
         'address_label' => 'Adres',
         'address' => 'Brunssummerstraat 39, 6451 CP Schinveld, Nederland',
 
