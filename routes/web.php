@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
-
+use Illuminate\Support\Str;
 
 // Startseite (greift globalen Fallback)
 Route::get('/', fn() => view('mainPage'))->name('home');
@@ -50,6 +50,9 @@ Route::get('/ruitersport limburg/{any?}', function ($any = null) {
 Route::get('/{page}.html', function ($page) {
     return redirect('/' . $page, 301);
 });
+Route::get('/{page}.html', function ($page) {
+    return redirect('/' . $page, 301);
+});
 
 Route::get('/locale/{lang}', function ($lang) {
     if (! in_array($lang, ['de', 'nl'])) {
@@ -63,3 +66,14 @@ Route::get('/locale/{lang}', function ($lang) {
 })->name('locale.switch');
 
 
+Route::get('/{any}', function ($any) {
+    if ($any === 'index.html') {
+        return redirect('/', 301);
+    }
+
+    if (Str::startsWith($any, 'ruitersport limburg/')) {
+        return redirect('/' . Str::after($any, 'ruitersport limburg/'), 301);
+    }
+
+    abort(404);
+})->where('any', '.*');
