@@ -47,6 +47,10 @@ Route::get('/ruitersport limburg/{any?}', function ($any = null) {
     return redirect('/' . $any, 301);
 })->where('any', '.*');
 
+Route::get('/{page}.html', function ($page) {
+    return redirect('/' . $page, 301);
+});
+
 Route::get('/locale/{lang}', function ($lang) {
     if (! in_array($lang, ['de', 'nl'])) {
         $lang = 'nl'; // Fallback
