@@ -42,6 +42,11 @@ App::setLocale(config('app.locale'));
 
 Route::get("/Admin", function () { return view('adminView');})->name('admin');
 
+
+Route::get('/ruitersport limburg/{any?}', function ($any = null) {
+    return redirect('/' . $any, 301);
+})->where('any', '.*');
+
 Route::get('/locale/{lang}', function ($lang) {
     if (! in_array($lang, ['de', 'nl'])) {
         $lang = 'nl'; // Fallback
