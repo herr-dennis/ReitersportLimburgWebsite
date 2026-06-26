@@ -65,7 +65,8 @@ Route::get('/locale/{lang}', function ($lang) {
     return Redirect::to("/");
 })->name('locale.switch');
 
-
+Route::redirect('/index', '/', 301);
+Route::redirect('/index.html', '/', 301);
 Route::get('/{any}', function ($any) {
     if ($any === 'index.html') {
         return redirect('/', 301);
