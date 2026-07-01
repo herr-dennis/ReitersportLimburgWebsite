@@ -51,10 +51,10 @@ return [
         'opening_label' => 'Openingstijden',
 
         'opening_hours' => [
-            'tuesday' => 'Dinsdag: 09:00 – 18:00',
-            'wednesday' => 'Woensdag: 09:00 – 18:00',
-            'thursday' => 'Donderdag: 09:00 – 18:00',
-            'friday' => 'Vrijdag: 09:00 – 18:00',
+            'tuesday' => 'Dinsdag: 09:00 – 15:00',
+            'wednesday' => 'Woensdag: 09:00 – 15:00',
+            'thursday' => 'Donderdag: 09:00 – 15:00',
+            'friday' => 'Vrijdag: 09:00 – 15:00',
             'saturday' => 'Zaterdag: 09:00 – 17:00',
             'sunday' => 'Zondag: Gesloten',
             'monday' => 'Maandag: Gesloten',
