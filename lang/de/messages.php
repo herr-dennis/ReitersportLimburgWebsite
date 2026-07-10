@@ -38,10 +38,10 @@ return [
 
 
         'opening_hours' => [
-            'tuesday' => 'Dienstag: 09:00 – 15:00',
-            'wednesday' => 'Mittwoch: 09:00 – 15:00',
-            'thursday' => 'Donnerstag: 09:00 – 15:00',
-            'friday' => 'Freitag: 09:00 – 15:00',
+            'tuesday' => 'Dienstag: 09:00 – 18:00',
+            'wednesday' => 'Mittwoch: 09:00 – 18:00',
+            'thursday' => 'Donnerstag: Geschlossen',
+            'friday' => 'Freitag: 09:00 – 18:00',
             'saturday' => 'Samstag: 09:00 – 17:00',
             'sunday' => 'Sonntag: Geschlossen',
             'monday' => 'Montag: Geschlossen',
