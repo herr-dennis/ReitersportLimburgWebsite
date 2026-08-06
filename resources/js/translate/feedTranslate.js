@@ -20,7 +20,7 @@ Ons assortiment biedt een gebalanceerde mix van voedingsstoffen, vitaminen en mi
             de: [],
             nl: []
         },
-        image: "images_general/feed_shop.webp"
+        image: "images_general/feed_storage_1.webp"
     },
     {
         title: {
